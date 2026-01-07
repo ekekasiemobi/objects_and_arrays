@@ -35,3 +35,11 @@ function getPassingStudents(students){
 const passing = getPassingStudents(studentsWithAverage)
 console.log(passing)
 
+// QUESTION 4: Calculate Class Average
+function calculateClassAverage(students){
+  const averageClass = students.reduce((sum, x) => sum + x.average, 0 )/students.length
+  return Number(averageClass.toFixed(2))
+}
+
+const classAvg = calculateClassAverage(studentsWithAverage)
+console.log(classAvg)
