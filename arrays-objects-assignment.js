@@ -43,3 +43,11 @@ function calculateClassAverage(students){
 
 const classAvg = calculateClassAverage(studentsWithAverage)
 console.log(classAvg)
+
+// QUESTION 5: Find Student by ID
+function findStudentById(students, id){
+  return students.filter(student => student.id == id)
+}
+
+const student = findStudentById(students, 1)
+console.log(student)
